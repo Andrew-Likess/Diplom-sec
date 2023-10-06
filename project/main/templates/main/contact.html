@@ -1,0 +1,21 @@
+{% extends "main/layout.html" %}
+
+
+{% block title %}
+   Контакты
+{% endblock title %}
+
+{% block content %}
+   <div class="features">
+      <h1 class="contacts-title">Контакты</h1>
+      <p class="contacts-text">Вы можете связаться с нами по следующим контактам:</p>
+
+      <ul class="contacts-list">
+         <li class="contact-item">Телефон: +1 123-456-7890</li>
+         <li class="contact-item">Email: example@email.com</li>
+         <li class="contact-item">Адрес: г. Город, ул. Улица, д. 123</li>
+      </ul>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21165.059778530056!2d35.045338476806634!3d48.46358087469869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2dd7cd733b5%3A0xc5ea4bfee75bb576!2z0KLQpiDQn9Cw0YHRgdCw0LY!5e0!3m2!1sru!2sua!4v1695323783245!5m2!1sru!2sua" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map"></iframe>
+      {% comment %} <button class="btn btn-danger contacts-button">Просто нажми</button> {% endcomment %}
+   </div>
+{% endblock content %}
