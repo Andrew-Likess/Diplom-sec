@@ -3,6 +3,11 @@ from django.views import View
 from django.contrib.auth import authenticate, login
 from users.forms import UserCreationForm
 # Create your views here.
+from django.contrib.auth.views import LoginView
+
+
+class CustomLoginView(LoginView):
+    template_name = 'users/registration/login.html'
 
 
 class Register(View):
