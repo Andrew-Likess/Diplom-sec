@@ -97,6 +97,19 @@ form {
    list-style-type: circle;
 }
 
-.registaration {
+.registaration,
+.login {
+   color: #fff;
+}
+
+.user-wrapper {
+   padding-top: 50px;
+}
+
+.user {
+   margin-left: 10px;
+}
+
+.user-title {
    color: #fff;
 }
