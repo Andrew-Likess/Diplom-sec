@@ -1,7 +1,9 @@
 {% extends "main/layout.html" %}
-
+{% block title %}
+   Акаунт
+{% endblock title %}
 {% block content %}
-   <h2 class="user-title">Register</h2>
+   <h2 class="user-title">Регистрация</h2>
    <hr>
 
    <form action="{% url "register" %}" method="post" class="registaration">

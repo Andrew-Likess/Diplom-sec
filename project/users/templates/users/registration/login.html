@@ -1,8 +1,10 @@
 {% extends "main/layout.html" %}
-
+{% block title %}
+   Акаунт
+{% endblock title %}
 
 {% block content %}
-   <h2 class="user-title">Login</h2>
+   <h2 class="user-title">Авторизоваться</h2>
    <hr>
 
    {% if form.errors %}
@@ -12,7 +14,7 @@
    <form action="{% url "login" %}" method="post" class="login">
       {{form}}
       {% csrf_token %}
-      <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn btn-success">Отправить</button>
    </form>
 
    <a href="{% url "password_reset" %}">Забыли пароль?</a>

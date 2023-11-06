@@ -36,6 +36,11 @@ LOGIN_URL = reverse_lazy('login')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+PASSWORD_RESET_TEMPLATE = 'users/registration/password_reset_form.html'
+
+PASSWORD_RESET_CONFIRM_TEMPLATE = 'registration/password_reset_confirm.html'
+
+PASSWORD_RESET_COMPLETE_TEMPLATE = 'registration/password_reset_complete.html'
 
 # Application definition
 

@@ -11,6 +11,9 @@ a {
 }
 
 aside {
+   position: fixed;
+   top: 0;
+   left: 0;
    float: left;
    background: #181818;
    width: 20%;
@@ -20,21 +23,18 @@ aside {
    border-right: 5px solid #4d4d4d;
 }
 
+
 aside img {
    width: 80px;
-   /* width: 70px; */
    float: left;
 }
 
 aside .logo {
    font-size: 40px;
-   /* font-size: 28px; */
-   /**display w >= 1808px -> cool */
    margin-left: 10px;
    font-weight: bold;
    position: relative;
    top: -5px;
-   /* top: 20px; */
 }
 
 aside h3 {
@@ -60,12 +60,19 @@ aside ul a:hover {
    transform: scale(1.05);
 }
 
+main {
+   margin-left: 20%;
+   padding-top: 100px;
+   width: 80%;
+   float: right;
+}
+
 main .features {
-   float: left;
-   color: #fff;
-   margin-top: 100px;
+   float: none;
    text-align: center;
-   width: 75%;
+   width: 100%;
+   color: #fff;
+
 }
 
 main .features h1 {
@@ -76,6 +83,8 @@ main .features p {
    max-width: 400px;
    margin: 20px auto;
 }
+
+
 
 .alert-warning {
    float: left;
@@ -89,6 +98,9 @@ form {
    margin-left: 32%;
    width: 500px;
    margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .about-li {
@@ -100,10 +112,6 @@ form {
 .registaration,
 .login {
    color: #fff;
-}
-
-.user-wrapper {
-   padding-top: 50px;
 }
 
 .user {
