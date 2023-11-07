@@ -43,10 +43,9 @@ def create(request):
     if request.method == 'POST':
         form = ArticlesForm(request.POST)
         if form.is_valid():
-            # Сначала сохраняем форму, но не коммитим в базу данных
             article = form.save(commit=False)
-            article.author = request.user  # Присваиваем текущего пользователя как автора статьи
-            article.save()  # Теперь сохраняем статью с автором
+            article.author = request.user
+            article.save()
             return redirect('home')
         else:
             error = 'Форма неверна'

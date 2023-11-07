@@ -3,19 +3,16 @@
    margin-bottom: 10px;
 }
 
-/* Текст контактной информации */
 .contacts-text {
    font-size: 16px;
    margin-bottom: 20px;
 }
 
-/* Список контактов */
 .contacts-list {
    list-style: none;
    padding: 0;
 }
 
-/* Элементы списка */
 .contact-item {
    font-size: 18px;
    margin: 5px 0;
